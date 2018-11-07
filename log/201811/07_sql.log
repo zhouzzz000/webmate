@@ -1,0 +1,5 @@
+---------------------------------------------------------------
+[ 2018-11-07T08:57:58+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad1&password=125sdfas&sex=1&age=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.436207s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.530328s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `nick` = 'sdsad1'  AND `password` = 'b54941aecb9c34b33351d146c2a876d2' LIMIT 1 [ RunTime:0.124749s ]

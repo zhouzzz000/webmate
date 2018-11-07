@@ -1,0 +1,3 @@
+---------------------------------------------------------------
+[ 2018-11-07T08:57:58+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad1&password=125sdfas&sex=1&age=16
+[ error ] [403][D:\wamp64\www\webmate\application\api\validate\UserExistValidate.php:27]
