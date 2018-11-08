@@ -20,8 +20,7 @@ class UserExistValidate
 {
     public function goCheck()
     {
-       $user = User::where('nick','=',Request::param('nick'))->
-             where('password','=',md5(Request::param('password').config('setting.salt')))->find();
+       $user = User::where('email','=',Request::param('email'))->find();
        if ($user)
        {
            throw new UserExistException();

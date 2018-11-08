@@ -11,7 +11,7 @@ namespace app\api\exception;
 
 class UserExistException extends BaseEcxeption
 {
-    public $msg = '用户已经存在';
+    public $msg = '用户已经存在或该邮箱已经注册过';
     public $code = 403;
     public $errorCode = 10001;
 }

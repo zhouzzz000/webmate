@@ -20,14 +20,14 @@ class HttpHandler extends Handle
 {
     private $msg = '';
     private $errorCode = '';
-    private $status = '';
+    private $code = '';
     public function render(Exception $e)
     {
         if ($e instanceof BaseEcxeption)
         {
             $this->msg = $e->msg;
             $this->errorCode = $e->errorCode;
-            $this->status = $e->status;
+            $this->code = $e->code;
         }
         else if($e instanceof HttpException && Request::isAjax())
         {
@@ -40,7 +40,7 @@ class HttpHandler extends Handle
                 }else{
                     $this->errorCode = 9999;
                     $this->msg = "服务器内部错误";
-                    $this->status = 500;
+                    $this->code = 500;
                     Log::error($e->getMessage());
                 }
         }
@@ -49,6 +49,6 @@ class HttpHandler extends Handle
             'msg'=>$this->msg,
             'request_url'=>Request::path()
         ];
-        return json($res,$this->status);
+        return json($res,$this->code);
     }
 }

@@ -1,3 +1,30 @@
 ---------------------------------------------------------------
 [ 2018-11-07T08:57:58+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad1&password=125sdfas&sex=1&age=16
 [ error ] [403][D:\wamp64\www\webmate\application\api\validate\UserExistValidate.php:27]
+---------------------------------------------------------------
+[ 2018-11-07T15:30:03+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad1&password=125sdfas&sex=1&age=16
+[ error ] [403][D:\wamp64\www\webmate\application\api\validate\UserExistValidate.php:27]
+---------------------------------------------------------------
+[ 2018-11-07T15:30:06+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad1&password=125sdfas&sex=1&age=16
+[ error ] [403][D:\wamp64\www\webmate\application\api\validate\UserExistValidate.php:27]
+---------------------------------------------------------------
+[ 2018-11-07T15:30:18+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad20&password=125sdfas&sex=1&age=16
+[ error ] [2]date() expects at least 1 parameter, 0 given[D:\wamp64\www\webmate\application\api\controller\User.php:25]
+---------------------------------------------------------------
+[ 2018-11-07T15:31:19+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad20&password=125sdfas&sex=1&age=16
+[ error ] [10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '18181818-NovNov-0707 1515:1111:1919' for column 'register_at' at row 1[D:\wamp64\www\webmate\thinkphp\library\think\db\Connection.php:764]
+---------------------------------------------------------------
+[ 2018-11-07T15:31:44+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad20&password=125sdfas&sex=1&age=16
+[ error ] [10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1541575904' for column 'register_at' at row 1[D:\wamp64\www\webmate\thinkphp\library\think\db\Connection.php:764]
+---------------------------------------------------------------
+[ 2018-11-07T15:35:32+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad20&password=125sdfas&sex=1&age=16
+[ error ] [403][D:\wamp64\www\webmate\application\api\validate\UserExistValidate.php:27]
+---------------------------------------------------------------
+[ 2018-11-07T18:20:06+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad21&password=125sdfas&sex=1&age=16
+[ error ] [403][D:\wamp64\www\webmate\application\api\validate\UserExistValidate.php:27]
+---------------------------------------------------------------
+[ 2018-11-07T20:00:49+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad21&password=125sdfas&sex=1&age=16
+[ error ] [403][D:\wamp64\www\webmate\application\api\validate\UserExistValidate.php:27]
+---------------------------------------------------------------
+[ 2018-11-07T20:00:53+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad21&password=125sdfas&sex=1&age=16
+[ error ] [403][D:\wamp64\www\webmate\application\api\validate\UserExistValidate.php:27]

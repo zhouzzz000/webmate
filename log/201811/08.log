@@ -1,0 +1,226 @@
+---------------------------------------------------------------
+[ 2018-11-08T16:36:48+08:00 ] ::1 POST localhost/webmate/public/user/logout
+[运行时间：0.190424s] [吞吐率：5.25req/s] [内存消耗：3,912.35kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060284s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040018s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.039788s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:37:07+08:00 ] ::1 POST localhost/webmate/public/user/logout
+[运行时间：0.327312s] [吞吐率：3.06req/s] [内存消耗：3,885.09kb] [文件加载：79]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.054567s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.036146s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.036194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.036608s ]
+[ sql ] [ SQL ] UPDATE `login_history`  SET `logout_at` = '2018-11-08 16:37:07'  WHERE  `uid` = 31  AND `logout_at` IS NULL [ RunTime:0.035317s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `is_login` = 0 , `update_time` = '2018-11-08 16:37:07'  WHERE  `id` = 31 [ RunTime:0.035264s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:37:37+08:00 ] ::1 POST localhost/webmate/public/user/logout
+[运行时间：0.183694s] [吞吐率：5.44req/s] [内存消耗：3,912.36kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060105s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039753s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.039844s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:46:43+08:00 ] ::1 POST localhost/webmate/public/user/sign_in?nick=sdsad23&password=125sdfas&sex=1&age=16&email=1123564@qq.com
+[运行时间：0.535380s] [吞吐率：1.87req/s] [内存消耗：4,113.79kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058050s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.054896s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `nick` = 'sdsad23'  AND `password` = 'b54941aecb9c34b33351d146c2a876d2' LIMIT 1 [ RunTime:0.068758s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`nick` , `password` , `sex` , `age` , `email` , `is_login` , `integral` , `register_at` , `create_time` , `update_time`) VALUES ('sdsad23' , 'b54941aecb9c34b33351d146c2a876d2' , 1 , 16 , '1123564@qq.com' , 1 , 10 , '2018-11-08 16:46:43' , '2018-11-08 16:46:43' , '2018-11-08 16:46:43') [ RunTime:0.105868s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.038277s ]
+[ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (32 , '2018-11-08 16:46:43' , '2018-11-08 16:46:43' , '2018-11-08 16:46:43') [ RunTime:0.039814s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:48:39+08:00 ] ::1 POST localhost/webmate/public/user/sign_in?nick=sdsad23&password=125sdfas&sex=1&age=16&email=1123564@qq.com
+[运行时间：0.187709s] [吞吐率：5.33req/s] [内存消耗：4,112.09kb] [文件加载：81]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.055833s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.036970s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1123564@qq.com' LIMIT 1 [ RunTime:0.037238s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:48:55+08:00 ] ::1 POST localhost/webmate/public/user/sign_in?nick=sdsad23&password=125sdfas&sex=1&age=16&email=1123564@qq.com
+[运行时间：0.199035s] [吞吐率：5.02req/s] [内存消耗：4,112.09kb] [文件加载：81]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.055324s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.036786s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1123564@qq.com' LIMIT 1 [ RunTime:0.036394s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:48:58+08:00 ] ::1 POST localhost/webmate/public/user/sign_in?nick=sdsad234&password=125sdfas&sex=1&age=16&email=1123564@qq.com
+[运行时间：0.193491s] [吞吐率：5.17req/s] [内存消耗：4,112.09kb] [文件加载：81]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062340s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041696s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1123564@qq.com' LIMIT 1 [ RunTime:0.041160s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:49:09+08:00 ] ::1 POST localhost/webmate/public/user/sign_in?nick=sdsad23&password=125sdfas&sex=1&age=16&email=1123564@qq.com
+[运行时间：0.170023s] [吞吐率：5.88req/s] [内存消耗：4,112.09kb] [文件加载：81]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.055992s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.037403s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1123564@qq.com' LIMIT 1 [ RunTime:0.037528s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:49:14+08:00 ] ::1 POST localhost/webmate/public/user/sign_in?nick=sdsad23&password=125sdfas&sex=1&age=16&email=112356a4@qq.com
+[运行时间：0.426609s] [吞吐率：2.34req/s] [内存消耗：4,112.17kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060435s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040611s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '112356a4@qq.com' LIMIT 1 [ RunTime:0.040069s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`nick` , `password` , `sex` , `age` , `email` , `is_login` , `integral` , `register_at` , `create_time` , `update_time`) VALUES ('sdsad23' , 'b54941aecb9c34b33351d146c2a876d2' , 1 , 16 , '112356a4@qq.com' , 1 , 10 , '2018-11-08 16:49:14' , '2018-11-08 16:49:14' , '2018-11-08 16:49:14') [ RunTime:0.039631s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.040132s ]
+[ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (33 , '2018-11-08 16:49:14' , '2018-11-08 16:49:14' , '2018-11-08 16:49:14') [ RunTime:0.039017s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:50:01+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.213181s] [吞吐率：4.69req/s] [内存消耗：3,913.27kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057869s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.036636s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.067358s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:50:42+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.192718s] [吞吐率：5.19req/s] [内存消耗：3,913.30kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059431s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039207s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.038657s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:52:18+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.167057s] [吞吐率：5.99req/s] [内存消耗：3,913.30kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.055645s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.036810s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.036428s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:52:34+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.239718s] [吞吐率：4.17req/s] [内存消耗：3,913.30kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076120s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.045609s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.059284s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:52:36+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.182987s] [吞吐率：5.46req/s] [内存消耗：3,913.30kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.055266s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.037271s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.036864s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:53:12+08:00 ] ::1 POST localhost/webmate/public/user/change/info?email=1321
+[运行时间：0.571109s] [吞吐率：1.75req/s] [内存消耗：3,876.82kb] [文件加载：80]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063246s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041722s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.042624s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.042925s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `email` = '1321' , `update_time` = '2018-11-08 16:53:12'  WHERE  `id` = 33 [ RunTime:0.258318s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:55:02+08:00 ] ::1 POST localhost/webmate/public/user/change/info?email=1321
+[运行时间：0.185992s] [吞吐率：5.38req/s] [内存消耗：4,120.75kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.053655s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.035579s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.035335s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:55:21+08:00 ] ::1 POST localhost/webmate/public/user/change/info?email=1321@dasd
+[运行时间：0.192122s] [吞吐率：5.21req/s] [内存消耗：4,120.75kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059364s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039482s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.038759s ]
+---------------------------------------------------------------
+[ 2018-11-08T16:55:28+08:00 ] ::1 POST localhost/webmate/public/user/change/info?email=1321@dasd.com
+[运行时间：0.327438s] [吞吐率：3.05req/s] [内存消耗：4,097.89kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059608s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041485s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.039506s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 33 LIMIT 1 [ RunTime:0.038890s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `email` = '1321@dasd.com' , `update_time` = '2018-11-08 16:55:28'  WHERE  `id` = 33 [ RunTime:0.039245s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:29:59+08:00 ] ::1 POST localhost/webmate/public/user/sign_in?nick=sdsad23&password=125sdfas&sex=1&age=16&email=1123564@qq.com
+[运行时间：0.348434s] [吞吐率：2.87req/s] [内存消耗：4,110.45kb] [文件加载：81]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059553s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041121s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1123564@qq.com' LIMIT 1 [ RunTime:0.039538s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:30:11+08:00 ] ::1 POST localhost/webmate/public/user/sign_in?nick=sdsad23&password=125sdfas&sex=1&age=16&email=11235s64@qq.com
+[运行时间：0.535836s] [吞吐率：1.87req/s] [内存消耗：4,110.55kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.052676s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.034942s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '11235s64@qq.com' LIMIT 1 [ RunTime:0.034476s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`nick` , `password` , `sex` , `age` , `email` , `is_login` , `integral` , `register_at` , `create_time` , `update_time`) VALUES ('sdsad23' , 'b54941aecb9c34b33351d146c2a876d2' , 1 , 16 , '11235s64@qq.com' , 1 , 10 , '2018-11-08 18:30:11' , '2018-11-08 18:30:11' , '2018-11-08 18:30:11') [ RunTime:0.044593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.035144s ]
+[ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (34 , '2018-11-08 18:30:11' , '2018-11-08 18:30:11' , '2018-11-08 18:30:11') [ RunTime:0.033951s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:31:22+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.318066s] [吞吐率：3.14req/s] [内存消耗：3,911.66kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062889s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041843s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.041414s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:31:39+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.294570s] [吞吐率：3.39req/s] [内存消耗：3,911.66kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057334s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038310s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.037595s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:31:40+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.288402s] [吞吐率：3.47req/s] [内存消耗：3,911.66kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061908s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041258s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.040203s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:31:42+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.288355s] [吞吐率：3.47req/s] [内存消耗：3,911.66kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057106s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038086s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.037994s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:31:43+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.303538s] [吞吐率：3.29req/s] [内存消耗：3,911.66kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058191s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038383s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.038129s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:31:43+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.301419s] [吞吐率：3.32req/s] [内存消耗：3,911.66kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058067s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038014s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.038195s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:31:45+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.403184s] [吞吐率：2.48req/s] [内存消耗：3,911.66kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060761s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039675s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.039454s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:31:52+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.289862s] [吞吐率：3.45req/s] [内存消耗：3,911.66kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063225s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041730s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.042328s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:31:53+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.303690s] [吞吐率：3.29req/s] [内存消耗：3,911.66kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068733s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040936s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.040178s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:31:54+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.341059s] [吞吐率：2.93req/s] [内存消耗：3,911.66kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083971s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.049679s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.040948s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:32:25+08:00 ] ::1 POST localhost/webmate/public/user/change/info?nick=zhou
+[运行时间：0.475265s] [吞吐率：2.10req/s] [内存消耗：4,096.31kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058250s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038462s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.042611s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.038527s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `nick` = 'zhou' , `update_time` = '2018-11-08 18:32:25'  WHERE  `id` = 34 [ RunTime:0.037933s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:32:29+08:00 ] ::1 POST localhost/webmate/public/user/change/info?nick=zhou
+[运行时间：0.447754s] [吞吐率：2.23req/s] [内存消耗：4,138.55kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071424s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.045559s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.042075s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.109614s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:32:30+08:00 ] ::1 POST localhost/webmate/public/user/change/info?nick=zhou
+[运行时间：0.365421s] [吞吐率：2.74req/s] [内存消耗：4,138.55kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058257s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039027s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.039569s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.038678s ]
+---------------------------------------------------------------
+[ 2018-11-08T18:32:45+08:00 ] ::1 POST localhost/webmate/public/user/change/info?nick=sdada
+[运行时间：0.503681s] [吞吐率：1.99req/s] [内存消耗：4,096.33kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071554s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038503s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.037886s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.057124s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `nick` = 'sdada' , `update_time` = '2018-11-08 18:32:44'  WHERE  `id` = 34 [ RunTime:0.037547s ]

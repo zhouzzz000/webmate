@@ -15,4 +15,8 @@
 return [
     // 默认中间件命名空间
     'default_namespace' => 'app\\api\\http\\middleware\\',
+    'login' => app\api\http\middleware\Login::class,
+    'signIn' => app\api\http\middleware\SignIn::class,
+    'token' => app\api\http\middleware\Token::class,
+    'user' => app\api\http\middleware\User::class,
 ];

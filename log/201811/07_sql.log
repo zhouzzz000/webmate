@@ -3,3 +3,48 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.436207s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.530328s ]
 [ sql ] [ SQL ] SELECT * FROM `user` WHERE  `nick` = 'sdsad1'  AND `password` = 'b54941aecb9c34b33351d146c2a876d2' LIMIT 1 [ RunTime:0.124749s ]
+---------------------------------------------------------------
+[ 2018-11-07T15:30:03+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad1&password=125sdfas&sex=1&age=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.124450s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039366s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `nick` = 'sdsad1'  AND `password` = 'b54941aecb9c34b33351d146c2a876d2' LIMIT 1 [ RunTime:0.037681s ]
+---------------------------------------------------------------
+[ 2018-11-07T15:30:06+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad1&password=125sdfas&sex=1&age=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057429s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038679s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `nick` = 'sdsad1'  AND `password` = 'b54941aecb9c34b33351d146c2a876d2' LIMIT 1 [ RunTime:0.039399s ]
+---------------------------------------------------------------
+[ 2018-11-07T15:30:18+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad20&password=125sdfas&sex=1&age=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.064424s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.043147s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `nick` = 'sdsad20'  AND `password` = 'b54941aecb9c34b33351d146c2a876d2' LIMIT 1 [ RunTime:0.042542s ]
+---------------------------------------------------------------
+[ 2018-11-07T15:31:19+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad20&password=125sdfas&sex=1&age=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062743s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.042645s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `nick` = 'sdsad20'  AND `password` = 'b54941aecb9c34b33351d146c2a876d2' LIMIT 1 [ RunTime:0.041660s ]
+---------------------------------------------------------------
+[ 2018-11-07T15:31:44+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad20&password=125sdfas&sex=1&age=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058542s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039203s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `nick` = 'sdsad20'  AND `password` = 'b54941aecb9c34b33351d146c2a876d2' LIMIT 1 [ RunTime:0.041359s ]
+---------------------------------------------------------------
+[ 2018-11-07T15:35:32+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad20&password=125sdfas&sex=1&age=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057934s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038665s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `nick` = 'sdsad20'  AND `password` = 'b54941aecb9c34b33351d146c2a876d2' LIMIT 1 [ RunTime:0.039704s ]
+---------------------------------------------------------------
+[ 2018-11-07T18:20:06+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad21&password=125sdfas&sex=1&age=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114369s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:1.295867s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `nick` = 'sdsad21'  AND `password` = 'b54941aecb9c34b33351d146c2a876d2' LIMIT 1 [ RunTime:0.339103s ]
+---------------------------------------------------------------
+[ 2018-11-07T20:00:49+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad21&password=125sdfas&sex=1&age=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062273s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.061436s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `nick` = 'sdsad21'  AND `password` = 'b54941aecb9c34b33351d146c2a876d2' LIMIT 1 [ RunTime:0.079507s ]
+---------------------------------------------------------------
+[ 2018-11-07T20:00:53+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad21&password=125sdfas&sex=1&age=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059701s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039493s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `nick` = 'sdsad21'  AND `password` = 'b54941aecb9c34b33351d146c2a876d2' LIMIT 1 [ RunTime:0.039289s ]

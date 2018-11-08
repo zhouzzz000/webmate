@@ -9,9 +9,10 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-
-Route::get('hello/:name', 'api/index/hello')->midedlware(['login']);
-Route::get('user/sign_in', 'api/User/signIn')->midedlware(['signIn']);
-
+Route::post('user/sign_in', 'api/User/signIn')->middleware(['signIn']);
+Route::get('user/info', 'api/User/getUserInfo')->middleware(['token']);
+Route::post('user/change/info', 'api/User/updateUserInfo')->middleware(['token','user']);
+Route::post('user/logout', 'api/User/logout')->middleware(['token']);
 return [
+
 ];

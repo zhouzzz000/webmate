@@ -1,0 +1,16 @@
+---------------------------------------------------------------
+[ 2018-11-07T15:32:38+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad20&password=125sdfas&sex=1&age=16
+[运行时间：0.750853s] [吞吐率：1.33req/s] [内存消耗：4,085.77kb] [文件加载：85]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062049s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041359s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `nick` = 'sdsad20'  AND `password` = 'b54941aecb9c34b33351d146c2a876d2' LIMIT 1 [ RunTime:0.040861s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`nick` , `password` , `sex` , `age` , `is_login` , `integral` , `register_at` , `create_time` , `update_time`) VALUES ('sdsad20' , 'b54941aecb9c34b33351d146c2a876d2' , 1 , 16 , 1 , 10 , '2018-11-07 15:32:37' , '2018-11-07 15:32:37' , '2018-11-07 15:32:37') [ RunTime:0.040435s ]
+---------------------------------------------------------------
+[ 2018-11-07T15:35:37+08:00 ] ::1 GET localhost/webmate/public/user/sign_in?nick=sdsad21&password=125sdfas&sex=1&age=16
+[运行时间：0.446553s] [吞吐率：2.24req/s] [内存消耗：4,098.88kb] [文件加载：86]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058005s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038173s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `nick` = 'sdsad21'  AND `password` = 'b54941aecb9c34b33351d146c2a876d2' LIMIT 1 [ RunTime:0.038094s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`nick` , `password` , `sex` , `age` , `is_login` , `integral` , `register_at` , `create_time` , `update_time`) VALUES ('sdsad21' , 'b54941aecb9c34b33351d146c2a876d2' , 1 , 16 , 1 , 10 , '2018-11-07 15:35:37' , '2018-11-07 15:35:37' , '2018-11-07 15:35:37') [ RunTime:0.037152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.037704s ]
+[ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (29 , '2018-11-07 15:35:37' , '2018-11-07 15:35:37' , '2018-11-07 15:35:37') [ RunTime:0.037320s ]

@@ -15,7 +15,7 @@ class BaseEcxeption extends Exception
 {
     public $msg = '参数错误';
     public $errorCode = '';
-    public $status = '400';
+    public $code = '400';
     public function __construct($data = [])
     {
         if (!is_array($data))
@@ -23,9 +23,9 @@ class BaseEcxeption extends Exception
             $this->msg = $data;
         }
 
-        if (array_key_exists('status',$data))
+        if (array_key_exists('code',$data))
         {
-            $this->status = $data['status'];
+            $this->code = $data['code'];
         }
         if (array_key_exists('errorCode',$data))
         {

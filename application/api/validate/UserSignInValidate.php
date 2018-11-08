@@ -18,5 +18,6 @@ class UserSignInValidate extends BaseValidate
         'age' => ['require','integer','between'=>'10,70'],
         'major' => ['chsAlpha'],
         'grade' => ['integer','between'=>'1,99'],
+        'email' => ['require','email'],
     ];
 }
