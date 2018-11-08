@@ -87,4 +87,46 @@ class User extends Controller
             'msg' => $user->save(),
         ]);
     }
+
+    public function login(Request $request){
+
+
+        if ($token = $request->header('token')){
+
+            $id = Cache::get($token);
+            $user = UserModel::where('id','=',$id)->find();
+            $user->is_login = 1 ;
+            $user->save();
+            $arr2 = [
+                'uid' => $id,
+                'login_at' =>  date('Y-m-d H:i:s',time()),
+            ];
+            LoginHistory::create($arr2);
+            Cache::set($token,$id,7*60*60);
+            return json([
+                'id' => $id,
+                'notice' => 'success',
+            ]);
+        }else{
+            $arr = $request->param();
+            $email = $arr['email'];
+            $user = UserModel::where('email','=',$email)->find();
+            $id = $user->id;
+            $user->is_login = 1 ;
+            $user->save();
+            $arr2 = [
+                'uid' => $id,
+                'login_at' =>  date('Y-m-d H:i:s',time()),
+            ];
+            LoginHistory::create($arr2);
+            $token = Token::getNewToken($id);
+            Cache::set($token,$id,7*60*60);
+            return json([
+                'id' => $id,
+                'token' => $token,
+                'notice' => 'success',
+            ]);
+        }
+
+    }
 }
