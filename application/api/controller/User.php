@@ -100,7 +100,7 @@ class User extends Controller
             $user->is_login = 1 ;
             $user->save();
             $arr2 = [
-                'uid' => $id,
+                'id' => $id,
                 'login_at' =>  date('Y-m-d H:i:s',time()),
             ];
             LoginHistory::create($arr2);
@@ -117,7 +117,7 @@ class User extends Controller
             $user->is_login = 1 ;
             $user->save();
             $arr2 = [
-                'uid' => $id,
+                'id' => $id,
                 'login_at' =>  date('Y-m-d H:i:s',time()),
             ];
             LoginHistory::create($arr2);
@@ -146,4 +146,6 @@ class User extends Controller
             'msg' => $user->save(),
         ]);
     }
+
+
 }

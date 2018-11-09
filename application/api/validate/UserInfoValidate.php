@@ -12,7 +12,7 @@ namespace app\api\validate;
 class UserInfoValidate extends BaseValidate
 {
     protected $rule = [
-        'nick' => ['min'=> 3,'max' => 25,'reges' => '/^[\w]+/'],
+        'nick' => ['min'=> 3,'max' => 25,'regex' => '/^[\w]+/'],
         'sex' => ['in'=>'1,2'],
         'age' => ['integer','between'=>'10,70'],
         'major' => ['chsAlpha'],
