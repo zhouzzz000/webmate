@@ -1,26 +1,27 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: zhouzzz
+ * User: coolzai
  * Date: 2018/11/8
- * Time: 15:45
+ * Time: 18:07
  */
 
 namespace app\api\validate;
 
 
+use app\api\exception\UserDoesNotExistException;
 use app\api\exception\UserNotExistException;
 use app\api\model\User;
-use think\facade\Cache;
 use think\facade\Request;
 
-class UserNotExistValidate
+
+
+class UserDoesNotExistValidate
 {
     public function goCheck()
     {
-        $token = Request::header('token');
-        $id = Cache::get($token);
-        if (!$id)
+        $user = User::where('email','=',Request::param('email'))->find();
+        if (!$user)
         {
             throw new UserNotExistException();
         }

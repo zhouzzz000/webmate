@@ -1,0 +1,23 @@
+---------------------------------------------------------------
+[ 2018-11-09T00:00:29+08:00 ] ::1 POST localhost/webmate/public/user/sign_in?nick=qwczs&password=123456&sex=1&age=20&email=122@qq.com
+[运行时间：0.483624s] [吞吐率：2.07req/s] [内存消耗：3,474.63kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061110s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.037768s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '122@qq.com' LIMIT 1 [ RunTime:0.037313s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`nick` , `password` , `sex` , `age` , `email` , `is_login` , `integral` , `register_at` , `create_time` , `update_time`) VALUES ('qwczs' , 'e0e18f6c5d44525cb8a5d9333269f844' , 1 , 20 , '122@qq.com' , 1 , 10 , '2018-11-09 00:00:29' , '2018-11-09 00:00:29' , '2018-11-09 00:00:29') [ RunTime:0.037017s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.037659s ]
+[ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (47 , '2018-11-09 00:00:29' , '2018-11-09 00:00:29' , '2018-11-09 00:00:29') [ RunTime:0.036779s ]
+---------------------------------------------------------------
+[ 2018-11-09T00:00:45+08:00 ] ::1 POST localhost/webmate/public/user/login
+[运行时间：0.289059s] [吞吐率：3.46req/s] [内存消耗：3,306.84kb] [文件加载：77]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.055198s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039427s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.037670s ]
+---------------------------------------------------------------
+[ 2018-11-09T00:02:03+08:00 ] ::1 POST localhost/webmate/public/user/login
+[运行时间：0.428146s] [吞吐率：2.34req/s] [内存消耗：3,281.13kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059241s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038582s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.038741s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.038253s ]
+[ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (47 , '2018-11-09 00:02:02' , '2018-11-09 00:02:02' , '2018-11-09 00:02:02') [ RunTime:0.040198s ]
