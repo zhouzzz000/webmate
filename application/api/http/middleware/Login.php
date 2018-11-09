@@ -17,12 +17,10 @@ class Login
             (new UserNotExistValidate())->goCheck();
         }
         else {
-            (new LoginPasswordValidate())->goCheck();
             (new UserLoginValidate())->goCheck();
+            (new LoginPasswordValidate())->goCheck();
             (new UserDoesNotExistValidate())->goCheck();
-
         }
-
         return $next($request);
     }
 }

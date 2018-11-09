@@ -17,8 +17,7 @@ class LoginPasswordValidate
     {
         $user = User::where('email','=',Request::param('email'))->find();
 
-
-        if ($user->password!=md5(Request::param('password').config('setting.salt')))
+        if ($user->password != md5(Request::param('password').config('setting.salt')))
         {
             throw new PasswordInvalidException();
         }

@@ -9,6 +9,8 @@
 namespace app\api\controller;
 
 
+use app\api\exception\ParamException;
+use app\api\exception\PasswordInvalidException;
 use app\api\model\LoginHistory;
 use app\api\service\Token;
 use think\Controller;
@@ -105,7 +107,7 @@ class User extends Controller
             Cache::set($token,$id,7*60*60);
             return json([
                 'id' => $id,
-                'notice' => 'success',
+                'msg' => 'success',
             ]);
         }else{
             $arr = $request->param();
@@ -124,9 +126,24 @@ class User extends Controller
             return json([
                 'id' => $id,
                 'token' => $token,
-                'notice' => 'success',
+                'msg' => 'success',
             ]);
         }
+    }
 
+    public function updateUserPassword(Request $request)
+    {
+        $id = $request->id;
+        $user = UserModel::get($id);
+        $newPassword = $request->param('new_password');
+        $oldPassword = $request->param('old_password');
+        if ($user->password != md5($oldPassword.config('setting.salt')))
+        {
+            throw new PasswordInvalidException('密码错误');
+        }
+        $user->password = md5($newPassword.config('setting.salt'));
+        return json([
+            'msg' => $user->save(),
+        ]);
     }
 }

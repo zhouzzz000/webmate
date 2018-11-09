@@ -1,0 +1,60 @@
+---------------------------------------------------------------
+[ 2018-11-09T13:54:24+08:00 ] ::1 POST localhost/webmate/public/user/login
+[ error ] [403][D:\wamp64\www\webmate\application\api\validate\UserNotExistValidate.php:25]
+---------------------------------------------------------------
+[ 2018-11-09T13:54:31+08:00 ] ::1 POST localhost/webmate/public/user/login
+[ error ] [400][D:\wamp64\www\webmate\application\api\validate\BaseValidate.php:25]
+---------------------------------------------------------------
+[ 2018-11-09T13:57:15+08:00 ] ::1 POST localhost/webmate/public/user/login?email=1@qq.com&password=1234
+[ error ] [400][D:\wamp64\www\webmate\application\api\validate\BaseValidate.php:25]
+---------------------------------------------------------------
+[ 2018-11-09T13:57:20+08:00 ] ::1 POST localhost/webmate/public/user/login?email=1@qq.com&password=123445
+[ error ] [403][D:\wamp64\www\webmate\application\api\validate\LoginPasswordValidate.php:22]
+---------------------------------------------------------------
+[ 2018-11-09T14:17:38+08:00 ] ::1 POST localhost/webmate/public/user/sign_in?nick=sdsad2&password=12&sex=1&age=16
+[ error ] [400][D:\wamp64\www\webmate\application\api\validate\BaseValidate.php:25]
+---------------------------------------------------------------
+[ 2018-11-09T14:18:40+08:00 ] ::1 POST localhost/webmate/public/user/change/password
+[ error ] [401][D:\wamp64\www\webmate\application\api\validate\TokenValidate.php:26]
+---------------------------------------------------------------
+[ 2018-11-09T14:21:22+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123
+[ error ] [400][D:\wamp64\www\webmate\application\api\validate\BaseValidate.php:25]
+---------------------------------------------------------------
+[ 2018-11-09T14:27:05+08:00 ] ::1 POST localhost/webmate/public/user/login
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ']'[D:\wamp64\www\webmate\application\api\controller\User.php:146]
+---------------------------------------------------------------
+[ 2018-11-09T14:27:41+08:00 ] ::1 POST localhost/webmate/public/user/change/password
+[ error ] [400][D:\wamp64\www\webmate\application\api\validate\BaseValidate.php:25]
+---------------------------------------------------------------
+[ 2018-11-09T14:28:04+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123&new_passowrd=456789
+[ error ] [400][D:\wamp64\www\webmate\application\api\validate\BaseValidate.php:25]
+---------------------------------------------------------------
+[ 2018-11-09T14:28:14+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123789&new_password=456789
+[ error ] [2]array_key_exists() expects parameter 2 to be array, string given[D:\wamp64\www\webmate\application\api\exception\BaseEcxeption.php:26]
+---------------------------------------------------------------
+[ 2018-11-09T14:28:49+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123789&new_password=456789
+[ error ] [2]array_key_exists() expects parameter 2 to be array, string given[D:\wamp64\www\webmate\application\api\exception\BaseEcxeption.php:26]
+---------------------------------------------------------------
+[ 2018-11-09T14:29:44+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123789&new_password=456789
+[ error ] [403][D:\wamp64\www\webmate\application\api\controller\User.php:142]
+---------------------------------------------------------------
+[ 2018-11-09T14:29:53+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123456&new_password=456789
+[ error ] [403][D:\wamp64\www\webmate\application\api\controller\User.php:142]
+---------------------------------------------------------------
+[ 2018-11-09T14:30:26+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123456&new_password=456789
+[ error ] [403][D:\wamp64\www\webmate\application\api\controller\User.php:142]
+---------------------------------------------------------------
+[ 2018-11-09T14:30:55+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123456&new_password=456789
+[ error ] [403][D:\wamp64\www\webmate\application\api\controller\User.php:142]
+---------------------------------------------------------------
+[ 2018-11-09T14:31:17+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123456&new_password=456789
+[ error ] [403][D:\wamp64\www\webmate\application\api\controller\User.php:142]
+---------------------------------------------------------------
+[ 2018-11-09T14:31:32+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123456&new_password=456789
+[ error ] [403][D:\wamp64\www\webmate\application\api\controller\User.php:143]
+---------------------------------------------------------------
+[ 2018-11-09T14:32:02+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123456&new_password=456789
+[ error ] [403][D:\wamp64\www\webmate\application\api\controller\User.php:143]
+---------------------------------------------------------------
+[ 2018-11-09T14:34:22+08:00 ] ::1 POST localhost/webmate/public/user/login?email=1@qq.com&password=123456
+[ error ] [403][D:\wamp64\www\webmate\application\api\validate\LoginPasswordValidate.php:22]

@@ -12,6 +12,7 @@
 Route::post('user/sign_in', 'api/User/signIn')->middleware(['signIn']);
 Route::get('user/info', 'api/User/getUserInfo')->middleware(['token']);
 Route::post('user/change/info', 'api/User/updateUserInfo')->middleware(['token','user']);
+Route::post('user/change/password', 'api/User/updateUserPassword')->middleware(['token','user']);
 Route::post('user/logout', 'api/User/logout')->middleware(['token']);
 Route::post('user/login', 'api/User/login')->middleware(['login']);
 return [

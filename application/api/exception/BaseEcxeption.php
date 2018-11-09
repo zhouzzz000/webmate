@@ -22,18 +22,16 @@ class BaseEcxeption extends Exception
         {
             $this->msg = $data;
         }
-
-        if (array_key_exists('code',$data))
-        {
-            $this->code = $data['code'];
-        }
-        if (array_key_exists('errorCode',$data))
-        {
-            $this->errorCode = $data['errorCode'];
-        }
-        if (array_key_exists('msg',$data))
-        {
-            $this->msg = $data['msg'];
+        else {
+            if (array_key_exists('code', $data)) {
+                $this->code = $data['code'];
+            }
+            if (array_key_exists('errorCode', $data)) {
+                $this->errorCode = $data['errorCode'];
+            }
+            if (array_key_exists('msg', $data)) {
+                $this->msg = $data['msg'];
+            }
         }
     }
 }

@@ -21,3 +21,166 @@
 [ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.038741s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.038253s ]
 [ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (47 , '2018-11-09 00:02:02' , '2018-11-09 00:02:02' , '2018-11-09 00:02:02') [ RunTime:0.040198s ]
+---------------------------------------------------------------
+[ 2018-11-09T13:57:10+08:00 ] ::1 POST localhost/webmate/public/user/login?email=1@qq.com&password=123456
+[运行时间：0.782396s] [吞吐率：1.28req/s] [内存消耗：4,127.10kb] [文件加载：85]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060440s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040156s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.054237s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.039811s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.039539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.040089s ]
+[ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (45 , '2018-11-09 13:57:10' , '2018-11-09 13:57:10' , '2018-11-09 13:57:10') [ RunTime:0.039209s ]
+---------------------------------------------------------------
+[ 2018-11-09T13:57:20+08:00 ] ::1 POST localhost/webmate/public/user/login?email=1@qq.com&password=123445
+[运行时间：0.237138s] [吞吐率：4.22req/s] [内存消耗：4,114.77kb] [文件加载：82]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061557s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040712s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.040430s ]
+---------------------------------------------------------------
+[ 2018-11-09T13:57:25+08:00 ] ::1 POST localhost/webmate/public/user/login?email=1@qq.com&password=123456
+[运行时间：0.481819s] [吞吐率：2.08req/s] [内存消耗：4,127.10kb] [文件加载：85]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061414s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040638s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.040407s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.040096s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.039813s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.040428s ]
+[ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (45 , '2018-11-09 13:57:25' , '2018-11-09 13:57:25' , '2018-11-09 13:57:25') [ RunTime:0.041813s ]
+---------------------------------------------------------------
+[ 2018-11-09T13:59:05+08:00 ] ::1 POST localhost/webmate/public/user/login?email=1@qq.com&password=123456
+[运行时间：0.460693s] [吞吐率：2.17req/s] [内存消耗：4,127.10kb] [文件加载：85]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060522s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041124s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.039755s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.040203s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.039700s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.040655s ]
+[ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (45 , '2018-11-09 13:59:05' , '2018-11-09 13:59:05' , '2018-11-09 13:59:05') [ RunTime:0.039277s ]
+---------------------------------------------------------------
+[ 2018-11-09T13:59:35+08:00 ] ::1 POST localhost/webmate/public/user/login?email=1@qq.com&password=123456
+[运行时间：0.607342s] [吞吐率：1.65req/s] [内存消耗：4,127.54kb] [文件加载：85]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060328s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041441s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.039250s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.040292s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.039979s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `is_login` = 1 , `update_time` = '2018-11-09 13:59:35'  WHERE  `id` = 45 [ RunTime:0.039753s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.040035s ]
+[ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (45 , '2018-11-09 13:59:35' , '2018-11-09 13:59:35' , '2018-11-09 13:59:35') [ RunTime:0.041762s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:00:18+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.310501s] [吞吐率：3.22req/s] [内存消耗：3,926.18kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062698s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041150s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.041072s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:01:26+08:00 ] ::1 POST localhost/webmate/public/user/change/info?nick=zhou
+[运行时间：0.439482s] [吞吐率：2.28req/s] [内存消耗：4,109.92kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.064309s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.042603s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.041649s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `nick` = 'zhou' , `update_time` = '2018-11-09 14:01:25'  WHERE  `id` = 45 [ RunTime:0.041368s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:01:55+08:00 ] ::1 POST localhost/webmate/public/user/logout
+[运行时间：0.494111s] [吞吐率：2.02req/s] [内存消耗：3,898.23kb] [文件加载：79]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063058s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041525s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.041583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.041540s ]
+[ sql ] [ SQL ] UPDATE `login_history`  SET `logout_at` = '2018-11-09 14:01:55'  WHERE  `uid` = 45  AND `logout_at` IS NULL [ RunTime:0.048545s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `is_login` = 0 , `update_time` = '2018-11-09 14:01:55'  WHERE  `id` = 45 [ RunTime:0.040732s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:27:17+08:00 ] ::1 POST localhost/webmate/public/user/login
+[运行时间：0.585678s] [吞吐率：1.71req/s] [内存消耗：3,907.39kb] [文件加载：79]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067765s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041099s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.041334s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `is_login` = 1 , `update_time` = '2018-11-09 14:27:17'  WHERE  `id` = 45 [ RunTime:0.039418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.045126s ]
+[ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (45 , '2018-11-09 14:27:17' , '2018-11-09 14:27:17' , '2018-11-09 14:27:17') [ RunTime:0.041279s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:28:14+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123789&new_password=456789
+[运行时间：0.354393s] [吞吐率：2.82req/s] [内存消耗：4,227.05kb] [文件加载：90]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.055245s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.036980s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.037103s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:28:49+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123789&new_password=456789
+[运行时间：0.331863s] [吞吐率：3.01req/s] [内存消耗：4,227.02kb] [文件加载：90]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060162s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040412s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.040013s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:29:44+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123789&new_password=456789
+[运行时间：0.340047s] [吞吐率：2.94req/s] [内存消耗：4,222.85kb] [文件加载：87]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061131s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041020s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.040132s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:29:53+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123456&new_password=456789
+[运行时间：0.329465s] [吞吐率：3.04req/s] [内存消耗：4,222.85kb] [文件加载：87]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061412s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041433s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.041160s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:30:26+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123456&new_password=456789
+[运行时间：0.321999s] [吞吐率：3.11req/s] [内存消耗：4,224.97kb] [文件加载：88]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060163s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040394s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.040111s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:30:55+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123456&new_password=456789
+[运行时间：0.366710s] [吞吐率：2.73req/s] [内存消耗：4,224.97kb] [文件加载：88]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102333s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.042307s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.048361s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:31:17+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123456&new_password=456789
+[运行时间：0.346287s] [吞吐率：2.89req/s] [内存消耗：4,224.97kb] [文件加载：88]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066091s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.048351s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.048349s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:31:32+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123456&new_password=456789
+[运行时间：0.323527s] [吞吐率：3.09req/s] [内存消耗：4,225.80kb] [文件加载：88]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061979s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040452s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.040294s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:32:02+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123456&new_password=456789
+[运行时间：0.358756s] [吞吐率：2.79req/s] [内存消耗：4,224.97kb] [文件加载：88]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063472s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.043070s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.047389s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:32:50+08:00 ] ::1 POST localhost/webmate/public/user/change/password?old_password=123456&new_password=456789
+[运行时间：0.429250s] [吞吐率：2.33req/s] [内存消耗：4,119.28kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057892s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038486s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.038211s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `password` = '7ee9849867a861ef4b7be2184df67774' , `update_time` = '2018-11-09 14:32:50'  WHERE  `id` = 45 [ RunTime:0.037630s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:33:39+08:00 ] ::1 POST localhost/webmate/public/user/login
+[运行时间：0.418791s] [吞吐率：2.39req/s] [内存消耗：3,907.30kb] [文件加载：79]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058292s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038677s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.038571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.038797s ]
+[ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (45 , '2018-11-09 14:33:39' , '2018-11-09 14:33:39' , '2018-11-09 14:33:39') [ RunTime:0.037546s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:34:22+08:00 ] ::1 POST localhost/webmate/public/user/login?email=1@qq.com&password=123456
+[运行时间：0.236463s] [吞吐率：4.23req/s] [内存消耗：4,117.53kb] [文件加载：82]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060796s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040792s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.040140s ]
+---------------------------------------------------------------
+[ 2018-11-09T14:34:28+08:00 ] ::1 POST localhost/webmate/public/user/login?email=1@qq.com&password=456789
+[运行时间：0.491424s] [吞吐率：2.03req/s] [内存消耗：4,134.41kb] [文件加载：85]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062858s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041896s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.041276s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.041671s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.041489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.041801s ]
+[ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (45 , '2018-11-09 14:34:28' , '2018-11-09 14:34:28' , '2018-11-09 14:34:28') [ RunTime:0.043635s ]

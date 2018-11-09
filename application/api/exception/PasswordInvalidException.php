@@ -11,7 +11,7 @@ namespace app\api\exception;
 
 class PasswordInvalidException extends BaseEcxeption
 {
-    public $msg = '密码错误';
+    public $msg = '帐号或者密码错误';
     public $code = 403;
     public $errorCode = 10000;
 
