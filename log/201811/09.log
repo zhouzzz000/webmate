@@ -184,3 +184,91 @@
 [ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '1@qq.com' LIMIT 1 [ RunTime:0.041489s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.041801s ]
 [ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (45 , '2018-11-09 14:34:28' , '2018-11-09 14:34:28' , '2018-11-09 14:34:28') [ RunTime:0.043635s ]
+---------------------------------------------------------------
+[ 2018-11-09T17:01:41+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=8
+[运行时间：0.283179s] [吞吐率：3.53req/s] [内存消耗：4,189.20kb] [文件加载：86]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060723s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.040258s ]
+---------------------------------------------------------------
+[ 2018-11-09T17:08:01+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=45
+[运行时间：0.324112s] [吞吐率：3.09req/s] [内存消耗：4,190.70kb] [文件加载：86]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060869s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039477s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.039176s ]
+---------------------------------------------------------------
+[ 2018-11-09T17:08:11+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=10
+[运行时间：0.283503s] [吞吐率：3.53req/s] [内存消耗：4,121.78kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059093s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038710s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.038395s ]
+---------------------------------------------------------------
+[ 2018-11-09T17:08:22+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=46
+[运行时间：0.407031s] [吞吐率：2.46req/s] [内存消耗：4,100.05kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061473s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039312s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 46 LIMIT 1 [ RunTime:0.039154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.038980s ]
+[ sql ] [ SQL ] INSERT INTO `user_friend` (`uid` , `fid` , `create_time` , `update_time`) VALUES (45 , 46 , '2018-11-09 17:08:22' , '2018-11-09 17:08:22') [ RunTime:0.038608s ]
+---------------------------------------------------------------
+[ 2018-11-09T17:13:03+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=46
+[运行时间：0.350100s] [吞吐率：2.86req/s] [内存消耗：4,203.24kb] [文件加载：87]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057267s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038444s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 46 LIMIT 1 [ RunTime:0.037828s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.038390s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45  AND `fid` = 46 LIMIT 1 [ RunTime:0.037342s ]
+---------------------------------------------------------------
+[ 2018-11-09T17:13:12+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=47
+[运行时间：0.376869s] [吞吐率：2.65req/s] [内存消耗：4,200.19kb] [文件加载：88]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063253s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041725s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.041433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.041635s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45  AND `fid` = 47 LIMIT 1 [ RunTime:0.040542s ]
+---------------------------------------------------------------
+[ 2018-11-09T17:13:47+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=47
+[运行时间：0.477400s] [吞吐率：2.09req/s] [内存消耗：4,101.96kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062505s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040412s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.047368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.040072s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45  AND `fid` = 47 LIMIT 1 [ RunTime:0.039066s ]
+[ sql ] [ SQL ] INSERT INTO `user_friend` (`uid` , `fid` , `create_time` , `update_time`) VALUES (45 , 47 , '2018-11-09 17:13:47' , '2018-11-09 17:13:47') [ RunTime:0.047353s ]
+---------------------------------------------------------------
+[ 2018-11-09T17:17:17+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=47
+[运行时间：0.372419s] [吞吐率：2.69req/s] [内存消耗：4,206.13kb] [文件加载：87]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061636s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040804s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.041452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.040856s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45  AND `fid` = 47 LIMIT 1 [ RunTime:0.040334s ]
+---------------------------------------------------------------
+[ 2018-11-09T17:21:30+08:00 ] ::1 POST localhost/webmate/public/friend/delete?friend_id=10
+[运行时间：0.277739s] [吞吐率：3.60req/s] [内存消耗：4,124.48kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059139s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039273s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.039254s ]
+---------------------------------------------------------------
+[ 2018-11-09T17:21:36+08:00 ] ::1 POST localhost/webmate/public/friend/delete?friend_id=45
+[运行时间：0.282507s] [吞吐率：3.54req/s] [内存消耗：4,198.93kb] [文件加载：86]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059204s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039361s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.039339s ]
+---------------------------------------------------------------
+[ 2018-11-09T17:21:41+08:00 ] ::1 POST localhost/webmate/public/friend/delete?friend_id=46
+[运行时间：0.551036s] [吞吐率：1.81req/s] [内存消耗：4,106.09kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066646s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.054300s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 46 LIMIT 1 [ RunTime:0.042794s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.042938s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45  AND `fid` = 46 LIMIT 1 [ RunTime:0.041948s ]
+[ sql ] [ SQL ] DELETE FROM `user_friend` WHERE  `id` = 2 [ RunTime:0.091565s ]
+---------------------------------------------------------------
+[ 2018-11-09T17:21:50+08:00 ] ::1 POST localhost/webmate/public/friend/delete?friend_id=46
+[运行时间：0.365922s] [吞吐率：2.73req/s] [内存消耗：4,209.50kb] [文件加载：87]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063384s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.042062s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 46 LIMIT 1 [ RunTime:0.041356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.040712s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45  AND `fid` = 46 LIMIT 1 [ RunTime:0.040553s ]

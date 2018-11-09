@@ -20,7 +20,7 @@ class TokenValidate
     public function goCheck()
     {
         $token = Request::header('token');
-        $id= Cache::get($token);
+        $id = Cache::get($token);
         if (!$id)
         {
             throw new TokenException();

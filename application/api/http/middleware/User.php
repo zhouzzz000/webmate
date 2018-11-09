@@ -9,6 +9,7 @@
 namespace app\api\http\middleware;
 
 
+use app\api\validate\TokenValidate;
 use app\api\validate\UserInfoValidate;
 use app\api\validate\UserNotExistValidate;
 use app\api\validate\UserUpdatePasswordValidate;
@@ -20,11 +21,10 @@ class User
     {
         if ($request->has('email')) {
             (new UserInfoValidate())->goCheck();
-            (new UserNotExistValidate())->goCheck();
         }else{
             (new UserUpdatePasswordValidate())->goCheck();
-            (new UserNotExistValidate())->goCheck();
         }
+        (new TokenValidate())->goCheck();
         $request->id = Cache::get($request->header('token'));
         return $next($request);
     }

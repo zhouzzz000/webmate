@@ -15,6 +15,10 @@ Route::post('user/change/info', 'api/User/updateUserInfo')->middleware(['token',
 Route::post('user/change/password', 'api/User/updateUserPassword')->middleware(['token','user']);
 Route::post('user/logout', 'api/User/logout')->middleware(['token']);
 Route::post('user/login', 'api/User/login')->middleware(['login']);
+
+
+Route::post('friend/add', 'api/Friend/add')->middleware(['token','friend']);
+Route::post('friend/delete', 'api/Friend/delete')->middleware(['token','friend']);
 return [
 
 ];
