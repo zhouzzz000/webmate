@@ -20,6 +20,7 @@ Route::post('user/login', 'api/User/login')->middleware(['login']);
 Route::post('friend/add', 'api/Friend/add')->middleware(['token','friend']);
 Route::post('friend/delete', 'api/Friend/delete')->middleware(['token','friend']);
 Route::get('friend/list', 'api/Friend/friendList')->middleware(['token']);
+Route::post('friend/remark', 'api/Friend/remark')->middleware(['token','friend']);
 
 return [
 

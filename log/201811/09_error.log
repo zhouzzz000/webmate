@@ -121,3 +121,15 @@
 ---------------------------------------------------------------
 [ 2018-11-09T20:18:31+08:00 ] ::1 GET localhost/webmate/public/friend/list
 [ error ] [401][D:\wamp64\www\webmate\application\api\validate\TokenValidate.php:26]
+---------------------------------------------------------------
+[ 2018-11-09T20:30:29+08:00 ] ::1 POST localhost/webmate/public/user/login?password=123456
+[ error ] [401][D:\wamp64\www\webmate\application\api\validate\TokenValidate.php:26]
+---------------------------------------------------------------
+[ 2018-11-09T20:30:35+08:00 ] ::1 POST localhost/webmate/public/user/login?password=123456
+[ error ] [400][D:\wamp64\www\webmate\application\api\validate\BaseValidate.php:25]
+---------------------------------------------------------------
+[ 2018-11-09T20:30:42+08:00 ] ::1 POST localhost/webmate/public/user/login?email=122@qq.com&password=123456
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'uid' doesn't have a default value[D:\wamp64\www\webmate\thinkphp\library\think\db\Connection.php:764]
+---------------------------------------------------------------
+[ 2018-11-09T20:31:43+08:00 ] ::1 POST localhost/webmate/public/user/login?email=122@qq.com&password=123456
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'uid' doesn't have a default value[D:\wamp64\www\webmate\thinkphp\library\think\db\Connection.php:764]

@@ -453,3 +453,98 @@
 [ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45 [ RunTime:0.038540s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039250s ]
 [ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (47,46) [ RunTime:0.039098s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:30:42+08:00 ] ::1 POST localhost/webmate/public/user/login?email=122@qq.com&password=123456
+[运行时间：0.555011s] [吞吐率：1.80req/s] [内存消耗：3,543.52kb] [文件加载：87]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061591s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039628s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '122@qq.com' LIMIT 1 [ RunTime:0.038830s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '122@qq.com' LIMIT 1 [ RunTime:0.038198s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '122@qq.com' LIMIT 1 [ RunTime:0.038976s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `is_login` = 1 , `update_time` = '2018-11-09 20:30:42'  WHERE  `id` = 47 [ RunTime:0.037784s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.038310s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:31:43+08:00 ] ::1 POST localhost/webmate/public/user/login?email=122@qq.com&password=123456
+[运行时间：0.660843s] [吞吐率：1.51req/s] [内存消耗：3,543.09kb] [文件加载：87]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058656s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039687s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '122@qq.com' LIMIT 1 [ RunTime:0.039424s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '122@qq.com' LIMIT 1 [ RunTime:0.039693s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '122@qq.com' LIMIT 1 [ RunTime:0.039962s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.039829s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:32:49+08:00 ] ::1 POST localhost/webmate/public/user/login?email=122@qq.com&password=123456
+[运行时间：0.452355s] [吞吐率：2.21req/s] [内存消耗：3,493.43kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056525s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039269s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '122@qq.com' LIMIT 1 [ RunTime:0.038501s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '122@qq.com' LIMIT 1 [ RunTime:0.039697s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `email` = '122@qq.com' LIMIT 1 [ RunTime:0.038433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `login_history` [ RunTime:0.039073s ]
+[ sql ] [ SQL ] INSERT INTO `login_history` (`uid` , `login_at` , `create_time` , `update_time`) VALUES (47 , '2018-11-09 20:32:49' , '2018-11-09 20:32:49' , '2018-11-09 20:32:49') [ RunTime:0.038060s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:33:12+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.818636s] [吞吐率：1.22req/s] [内存消耗：3,487.63kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.193158s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038887s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.039149s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `images` [ RunTime:0.039528s ]
+[ sql ] [ SQL ] SELECT * FROM `images` WHERE  `id` = 0 [ RunTime:0.038759s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:34:44+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.384674s] [吞吐率：2.60req/s] [内存消耗：3,489.62kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062778s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039258s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 47 LIMIT 1 [ RunTime:0.039631s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `images` [ RunTime:0.041878s ]
+[ sql ] [ SQL ] SELECT * FROM `images` WHERE  `id` = 1 [ RunTime:0.039729s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:35:53+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[运行时间：0.264444s] [吞吐率：3.78req/s] [内存消耗：3,467.66kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.055806s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.037365s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 47 [ RunTime:0.037712s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:36:31+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=45
+[运行时间：0.661807s] [吞吐率：1.51req/s] [内存消耗：3,473.30kb] [文件加载：82]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056900s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038506s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.266600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.038391s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 47  AND `fid` = 45 LIMIT 1 [ RunTime:0.039342s ]
+[ sql ] [ SQL ] INSERT INTO `user_friend` (`uid` , `fid` , `create_time` , `update_time`) VALUES (47 , 45 , '2018-11-09 20:36:31' , '2018-11-09 20:36:31') [ RunTime:0.040163s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:36:52+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=46
+[运行时间：0.441061s] [吞吐率：2.27req/s] [内存消耗：3,473.33kb] [文件加载：82]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057254s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038426s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 46 LIMIT 1 [ RunTime:0.038489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.038481s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 47  AND `fid` = 46 LIMIT 1 [ RunTime:0.038492s ]
+[ sql ] [ SQL ] INSERT INTO `user_friend` (`uid` , `fid` , `create_time` , `update_time`) VALUES (47 , 46 , '2018-11-09 20:36:52' , '2018-11-09 20:36:52') [ RunTime:0.038214s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:36:58+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[运行时间：0.378903s] [吞吐率：2.64req/s] [内存消耗：3,478.48kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.055523s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.037785s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 47 [ RunTime:0.037672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.037798s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (45,46) [ RunTime:0.037425s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:54:59+08:00 ] ::1 POST localhost/webmate/public/friend/remark?friend_id=45&remark=sb
+[运行时间：0.505399s] [吞吐率：1.98req/s] [内存消耗：3,477.42kb] [文件加载：82]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062509s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.042038s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.041590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.041624s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 47  AND `fid` = 45 LIMIT 1 [ RunTime:0.041629s ]
+[ sql ] [ SQL ] UPDATE `user_friend`  SET `update_time` = '2018-11-09 20:54:59'  WHERE  `id` = 5 [ RunTime:0.041088s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:55:25+08:00 ] ::1 POST localhost/webmate/public/friend/remark?friend_id=45&remark=sb
+[运行时间：0.500633s] [吞吐率：2.00req/s] [内存消耗：3,478.01kb] [文件加载：82]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.062191s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.042323s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.041218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.042102s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 47  AND `fid` = 45 LIMIT 1 [ RunTime:0.041352s ]
+[ sql ] [ SQL ] UPDATE `user_friend`  SET `remarks` = 'sb' , `update_time` = '2018-11-09 20:55:25'  WHERE  `id` = 5 [ RunTime:0.040816s ]

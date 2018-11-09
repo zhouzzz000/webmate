@@ -14,10 +14,12 @@ use think\Model;
 class Images extends BaseModel
 {
     protected $visible = ['url'];
+
     public static function getUrlByID($id)
     {
         return self::get($id)->visible(['url'])['url'];
     }
+
     public function getUrlAttr($value,$data)
     {
         $newValue = $value;
