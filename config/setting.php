@@ -15,5 +15,5 @@
 
 return [
     'salt' => '12345678910AXCVBNMLKJHGFDSAQWERTYUIOPazxcvbnmlkjhgfdsqweertyuiop',
-    'img_prefix' => ''
+    'img_prefix' => 'http://zzwzs.xyz/images/'
 ];

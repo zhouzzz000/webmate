@@ -2,3 +2,4 @@
 /.vscod
 .DS_Store
 /log
+*.log
