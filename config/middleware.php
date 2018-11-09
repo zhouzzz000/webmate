@@ -19,4 +19,5 @@ return [
     'signIn' => app\api\http\middleware\SignIn::class,
     'token' => app\api\http\middleware\Token::class,
     'user' => app\api\http\middleware\User::class,
+    'friend' => app\api\http\middleware\Friend::class,
 ];

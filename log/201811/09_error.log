@@ -58,3 +58,48 @@
 ---------------------------------------------------------------
 [ 2018-11-09T14:34:22+08:00 ] ::1 POST localhost/webmate/public/user/login?email=1@qq.com&password=123456
 [ error ] [403][D:\wamp64\www\webmate\application\api\validate\LoginPasswordValidate.php:22]
+---------------------------------------------------------------
+[ 2018-11-09T16:57:49+08:00 ] ::1 POST localhost/webmate/public/friend/add
+[ error ] [403][D:\wamp64\www\webmate\application\api\controller\Friend.php:25]
+---------------------------------------------------------------
+[ 2018-11-09T16:58:58+08:00 ] ::1 POST localhost/webmate/public/friend/add
+[ error ] [400][D:\wamp64\www\webmate\application\api\validate\BaseValidate.php:25]
+---------------------------------------------------------------
+[ 2018-11-09T16:59:13+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=zhou
+[ error ] [400][D:\wamp64\www\webmate\application\api\validate\BaseValidate.php:25]
+---------------------------------------------------------------
+[ 2018-11-09T16:59:19+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=-1
+[ error ] [400][D:\wamp64\www\webmate\application\api\validate\BaseValidate.php:25]
+---------------------------------------------------------------
+[ 2018-11-09T17:01:28+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=45
+[ error ] [400][D:\wamp64\www\webmate\application\api\validate\BaseValidate.php:25]
+---------------------------------------------------------------
+[ 2018-11-09T17:01:41+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=8
+[ error ] [403][D:\wamp64\www\webmate\application\api\controller\Friend.php:29]
+---------------------------------------------------------------
+[ 2018-11-09T17:01:56+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=10
+[ error ] [400][D:\wamp64\www\webmate\application\api\validate\BaseValidate.php:25]
+---------------------------------------------------------------
+[ 2018-11-09T17:08:01+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=45
+[ error ] [400][D:\wamp64\www\webmate\application\api\controller\Friend.php:25]
+---------------------------------------------------------------
+[ 2018-11-09T17:08:11+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=10
+[ error ] [403][D:\wamp64\www\webmate\application\api\validate\FriendIDValidate.php:27]
+---------------------------------------------------------------
+[ 2018-11-09T17:13:03+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=46
+[ error ] [401][D:\wamp64\www\webmate\application\api\controller\Friend.php:31]
+---------------------------------------------------------------
+[ 2018-11-09T17:13:12+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=47
+[ error ] [8192]Non-static method think\Model::save() should not be called statically[D:\wamp64\www\webmate\application\api\controller\Friend.php:37]
+---------------------------------------------------------------
+[ 2018-11-09T17:17:17+08:00 ] ::1 POST localhost/webmate/public/friend/add?friend_id=47
+[ error ] [401][D:\wamp64\www\webmate\application\api\controller\Friend.php:31]
+---------------------------------------------------------------
+[ 2018-11-09T17:21:30+08:00 ] ::1 POST localhost/webmate/public/friend/delete?friend_id=10
+[ error ] [403][D:\wamp64\www\webmate\application\api\validate\FriendIDValidate.php:27]
+---------------------------------------------------------------
+[ 2018-11-09T17:21:36+08:00 ] ::1 POST localhost/webmate/public/friend/delete?friend_id=45
+[ error ] [400][D:\wamp64\www\webmate\application\api\controller\Friend.php:48]
+---------------------------------------------------------------
+[ 2018-11-09T17:21:50+08:00 ] ::1 POST localhost/webmate/public/friend/delete?friend_id=46
+[ error ] [401][D:\wamp64\www\webmate\application\api\controller\Friend.php:53]
