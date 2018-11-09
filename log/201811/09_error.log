@@ -103,3 +103,21 @@
 ---------------------------------------------------------------
 [ 2018-11-09T17:21:50+08:00 ] ::1 POST localhost/webmate/public/friend/delete?friend_id=46
 [ error ] [401][D:\wamp64\www\webmate\application\api\controller\Friend.php:53]
+---------------------------------------------------------------
+[ 2018-11-09T19:43:38+08:00 ] ::1 GET localhost/webmate/public/user/info
+[ error ] [0]致命错误: Call to a member function visible() on null[D:\wamp64\www\webmate\application\api\model\Images.php:18]
+---------------------------------------------------------------
+[ 2018-11-09T19:44:04+08:00 ] ::1 GET localhost/webmate/public/user/info
+[ error ] [0]致命错误: Call to a member function visible() on null[D:\wamp64\www\webmate\application\api\model\Images.php:18]
+---------------------------------------------------------------
+[ 2018-11-09T19:44:46+08:00 ] ::1 GET localhost/webmate/public/user/info
+[ error ] [0]类型错误: Argument 1 passed to think\Model::visible() must be of the type array, string given, called in D:\wamp64\www\webmate\application\api\model\Images.php on line 18[D:\wamp64\www\webmate\thinkphp\library\think\model\concern\Conversion.php:119]
+---------------------------------------------------------------
+[ 2018-11-09T20:12:04+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[ error ] [0]method not exist:app\api\model\UserFriend->selectAll[D:\wamp64\www\webmate\thinkphp\library\think\db\Query.php:180]
+---------------------------------------------------------------
+[ 2018-11-09T20:13:00+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[ error ] [0]语法解析错误: syntax error, unexpected ';', expecting ']'[D:\wamp64\www\webmate\application\api\controller\Friend.php:63]
+---------------------------------------------------------------
+[ 2018-11-09T20:18:31+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[ error ] [401][D:\wamp64\www\webmate\application\api\validate\TokenValidate.php:26]
