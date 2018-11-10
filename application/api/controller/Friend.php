@@ -63,4 +63,18 @@ class Friend extends Controller
           $data
         ]);
     }
+
+    public function remark(Request $request)
+    {
+        $uid = $request->id;
+        $fid = $request->param('friend_id');
+        $remark = $request->param('remark');
+        $friend = UserFriend::where('uid','=',$uid)->where('fid','=',$fid)
+            ->find();
+        $friend->remarks = $remark;
+        $friend->save();
+        return json([
+            'msg'=> 1 ,
+        ]);
+    }
 }
