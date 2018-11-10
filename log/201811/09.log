@@ -272,3 +272,184 @@
 [ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 46 LIMIT 1 [ RunTime:0.041356s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.040712s ]
 [ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45  AND `fid` = 46 LIMIT 1 [ RunTime:0.040553s ]
+---------------------------------------------------------------
+[ 2018-11-09T19:43:38+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.370590s] [吞吐率：2.70req/s] [内存消耗：4,013.11kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056150s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.037241s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.037203s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `images` [ RunTime:0.036782s ]
+[ sql ] [ SQL ] SELECT * FROM `images` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.037214s ]
+---------------------------------------------------------------
+[ 2018-11-09T19:44:04+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.385629s] [吞吐率：2.59req/s] [内存消耗：4,013.14kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061475s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040219s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.039797s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `images` [ RunTime:0.039733s ]
+[ sql ] [ SQL ] SELECT * FROM `images` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.039823s ]
+---------------------------------------------------------------
+[ 2018-11-09T19:44:46+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.375871s] [吞吐率：2.66req/s] [内存消耗：4,013.59kb] [文件加载：83]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056938s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.037997s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.037813s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `images` [ RunTime:0.038789s ]
+[ sql ] [ SQL ] SELECT * FROM `images` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.037232s ]
+---------------------------------------------------------------
+[ 2018-11-09T19:45:04+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.388863s] [吞吐率：2.57req/s] [内存消耗：3,952.74kb] [文件加载：79]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059073s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040679s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.039099s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `images` [ RunTime:0.043242s ]
+[ sql ] [ SQL ] SELECT * FROM `images` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.038129s ]
+---------------------------------------------------------------
+[ 2018-11-09T19:45:27+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.459292s] [吞吐率：2.18req/s] [内存消耗：4,036.67kb] [文件加载：81]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059675s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039347s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.039295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `images` [ RunTime:0.039185s ]
+[ sql ] [ SQL ] SELECT * FROM `images` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.038459s ]
+[ sql ] [ SQL ] SELECT * FROM `images` WHERE  `id` IN (0) [ RunTime:0.038088s ]
+---------------------------------------------------------------
+[ 2018-11-09T19:45:50+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.399158s] [吞吐率：2.51req/s] [内存消耗：3,952.91kb] [文件加载：79]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.063478s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.042046s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.041705s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `images` [ RunTime:0.041927s ]
+[ sql ] [ SQL ] SELECT * FROM `images` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.041207s ]
+---------------------------------------------------------------
+[ 2018-11-09T19:53:22+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.609561s] [吞吐率：1.64req/s] [内存消耗：3,955.98kb] [文件加载：80]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061574s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040928s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.041005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `images` [ RunTime:0.276699s ]
+[ sql ] [ SQL ] SELECT * FROM `images` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.040446s ]
+---------------------------------------------------------------
+[ 2018-11-09T19:53:41+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.364577s] [吞吐率：2.74req/s] [内存消耗：3,955.96kb] [文件加载：80]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056364s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.037925s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.037022s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `images` [ RunTime:0.038081s ]
+[ sql ] [ SQL ] SELECT * FROM `images` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.036637s ]
+---------------------------------------------------------------
+[ 2018-11-09T19:53:57+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.384101s] [吞吐率：2.60req/s] [内存消耗：3,955.97kb] [文件加载：80]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056059s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.037512s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.038008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `images` [ RunTime:0.037022s ]
+[ sql ] [ SQL ] SELECT * FROM `images` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.036282s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:05:08+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.410996s] [吞吐率：2.43req/s] [内存消耗：4,141.06kb] [文件加载：85]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061705s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041167s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.040785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `images` [ RunTime:0.040697s ]
+[ sql ] [ SQL ] SELECT * FROM `images` WHERE  `id` = 1 [ RunTime:0.041486s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:05:50+08:00 ] ::1 GET localhost/webmate/public/user/info
+[运行时间：0.382337s] [吞吐率：2.62req/s] [内存消耗：4,141.53kb] [文件加载：85]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057545s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038560s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.038192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `images` [ RunTime:0.037866s ]
+[ sql ] [ SQL ] SELECT * FROM `images` WHERE  `id` = 1 [ RunTime:0.037148s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:11:55+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[运行时间：0.268264s] [吞吐率：3.73req/s] [内存消耗：4,111.21kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061294s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.040435s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `id` = 45 [ RunTime:0.040210s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:12:17+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[运行时间：0.291174s] [吞吐率：3.43req/s] [内存消耗：4,027.23kb] [文件加载：82]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061999s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.041654s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.040576s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:12:44+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[运行时间：0.260916s] [吞吐率：3.83req/s] [内存消耗：3,914.13kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.060839s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.040889s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.040651s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:13:07+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[运行时间：0.280913s] [吞吐率：3.56req/s] [内存消耗：3,914.29kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.064866s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.043173s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.036199s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:13:19+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[运行时间：0.276444s] [吞吐率：3.62req/s] [内存消耗：3,914.19kb] [文件加载：78]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059812s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.039948s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.039552s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:14:02+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[运行时间：0.379377s] [吞吐率：2.64req/s] [内存消耗：4,122.34kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066278s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.043857s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45 [ RunTime:0.042404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.042738s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (47,46) [ RunTime:0.042700s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:15:06+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[运行时间：0.274519s] [吞吐率：3.64req/s] [内存消耗：4,112.19kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061456s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.040543s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45  AND `id` = 0 [ RunTime:0.039754s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:15:12+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[运行时间：0.376824s] [吞吐率：2.65req/s] [内存消耗：4,122.34kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061239s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.039671s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45 [ RunTime:0.039535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040021s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (47,46) [ RunTime:0.039869s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:16:31+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[运行时间：3.347144s] [吞吐率：0.30req/s] [内存消耗：4,122.90kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:3.059569s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.040338s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45 [ RunTime:0.038531s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039616s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (47,46) [ RunTime:0.039142s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:16:54+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[运行时间：0.376098s] [吞吐率：2.66req/s] [内存消耗：4,123.45kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059095s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.039082s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45 [ RunTime:0.038955s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.048205s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (47,46) [ RunTime:0.039099s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:17:35+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[运行时间：0.381612s] [吞吐率：2.62req/s] [内存消耗：4,123.49kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059620s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.039969s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45 [ RunTime:0.038942s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.042980s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (47,46) [ RunTime:0.039815s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:18:43+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[运行时间：0.352620s] [吞吐率：2.84req/s] [内存消耗：4,123.49kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061282s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.040483s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45 [ RunTime:0.039716s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040933s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (47,46) [ RunTime:0.041950s ]
+---------------------------------------------------------------
+[ 2018-11-09T20:20:01+08:00 ] ::1 GET localhost/webmate/public/friend/list
+[运行时间：0.356970s] [吞吐率：2.80req/s] [内存消耗：4,123.49kb] [文件加载：84]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059871s ] mysql:host=118.89.35.251;dbname=webdemo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_friend` [ RunTime:0.039281s ]
+[ sql ] [ SQL ] SELECT * FROM `user_friend` WHERE  `uid` = 45 [ RunTime:0.038540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039250s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` IN (47,46) [ RunTime:0.039098s ]

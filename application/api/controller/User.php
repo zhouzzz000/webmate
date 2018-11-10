@@ -11,6 +11,7 @@ namespace app\api\controller;
 
 use app\api\exception\ParamException;
 use app\api\exception\PasswordInvalidException;
+use app\api\model\Images;
 use app\api\model\LoginHistory;
 use app\api\service\Token;
 use think\Controller;
@@ -52,7 +53,9 @@ class User extends Controller
     public function getUserInfo(Request $request)
     {
         $id = Cache::get($request->header('token'));
-        $data = UserModel::get($id)->visible(['nick','sex','age','grade','major','register_at','integral','email']);
+        $data = UserModel::with(['avator'])->get($id)->hidden(['password','create_time','update_time','delete_time']);
+//        $avator = $data->avator;
+//        $data->avator = Images::getUrlByID($avator);
         return json($data);
     }
 

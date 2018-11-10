@@ -11,11 +11,10 @@ namespace app\api\controller;
 
 use app\api\exception\FriendHasException;
 use app\api\exception\ParamException;
-use app\api\exception\UserNotExistException;
 use app\api\model\UserFriend;
 use think\Controller;
 use think\Request;
-use app\api\model\User as UserModel;
+
 class Friend extends Controller
 {
     public function add(Request $request)
@@ -54,6 +53,28 @@ class Friend extends Controller
         }
         return json([
             'msg' => $rel->delete()
+        ]);
+    }
+
+    public function friendList(Request $request)
+    {
+        $data = UserFriend::with('friendInfo')->where('uid','=',$request->id)->select();
+        return json([
+          $data
+        ]);
+    }
+
+    public function remark(Request $request)
+    {
+        $uid = $request->id;
+        $fid = $request->param('friend_id');
+        $remark = $request->param('remark');
+        $friend = UserFriend::where('uid','=',$uid)->where('fid','=',$fid)
+            ->find();
+        $friend->remarks = $remark;
+        $friend->save();
+        return json([
+            'msg'=> 1 ,
         ]);
     }
 }
