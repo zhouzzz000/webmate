@@ -10,6 +10,7 @@ namespace app\api\controller;
 
 
 use app\api\exception\ImageUploadException;
+use app\api\exception\ParamException;
 use app\api\model\Images;
 use app\api\service\Image;
 use think\Controller;
@@ -22,6 +23,9 @@ class Publish extends Controller
          $id = $request->id;
          $image = $request->param('image');
          $content = $request->param('content');
+         if ($image == null && $content == null){
+             throw new ParamException('内容为空');
+         }
          $bool = false;
          if ($image != null){
              $imgID = Image::handleImages($image);
