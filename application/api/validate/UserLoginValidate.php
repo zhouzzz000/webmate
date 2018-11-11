@@ -13,6 +13,6 @@ class UserLoginValidate extends BaseValidate
 {
     protected $rule = [
         'email' => ['require','email'],
-        'password' => ['require','min'=>'6','max'=>'16','regex' => '/^[\d+|\w]*/'],
+        'password' => ['require','min'=>6,'max'=>16,'regex' => '/^[\d+|\w]*/'],
     ];
 }
