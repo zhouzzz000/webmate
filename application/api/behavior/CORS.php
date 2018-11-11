@@ -16,6 +16,7 @@ class CORS
         header('Access-Control-Allow-Origin: *');
         header('Access-Control-Allow-Methods: POST,GET,OPTIONS');
         header('Access-Control-Allow-Headers: *');
+
         if (request()->isOptions())
         {
             exit();
