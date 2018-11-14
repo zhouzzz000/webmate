@@ -47,7 +47,7 @@ class Image
         $dirPath = 'image/'.date('Y-m-d',time());
         if (!is_dir($dirPath))
         {
-            mkdir($dirPath,'0777',true);
+            mkdir($dirPath,'4777',true);
         }
         $imgName = self::createImg($image,$dirPath);
         $imgID = [];
