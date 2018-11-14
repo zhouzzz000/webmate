@@ -22,6 +22,14 @@ Route::post('friend/delete', 'api/Friend/delete')->middleware(['token','friend']
 Route::get('friend/list', 'api/Friend/friendList')->middleware(['token']);
 Route::post('friend/remark', 'api/Friend/remark')->middleware(['token','friend']);
 
+
+Route::post('publish/add', 'api/Publish/add')->middleware(['token']);
+Route::get('publish/list', 'api/Publish/publishList')->middleware(['token']);
+Route::get('publish/user_list', 'api/Publish/userList')->middleware(['publish']);
+Route::post('publish/delete', 'api/Publish/delete')->middleware(['publish']);
+Route::post('publish/star', 'api/Publish/star')->middleware(['token']);
+Route::post('publish/star_list', 'api/Publish/starList')->middleware(['token']);
+
 return [
 
 ];

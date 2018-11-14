@@ -1,5 +1,10 @@
 /.idea
 /.vscod
 .DS_Store
+<<<<<<< HEAD
 /log
 *.log
+=======
+log
+*.log
+>>>>>>> 52a1541e85824c5e575722480b52525f95502309

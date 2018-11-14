@@ -20,4 +20,5 @@ return [
     'token' => app\api\http\middleware\Token::class,
     'user' => app\api\http\middleware\User::class,
     'friend' => app\api\http\middleware\Friend::class,
+    'publish' => app\api\http\middleware\Publish::class,
 ];

@@ -77,4 +77,8 @@ class Friend extends Controller
            'msg'=> 1 ,
         ]);
     }
+
+
+
 }
+
