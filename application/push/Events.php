@@ -44,7 +44,6 @@ class Events
         $data = [
           'type'=> 'login',
           'client_id' => $client_id,
-          'date' => time()
         ];
         Gateway::sendToClient($client_id, json_encode($data));
         // 向所有人发送
@@ -68,7 +67,7 @@ class Events
        else {
            $message = json_decode($message);
            $data = [
-               'type' => '收到消息',
+               'type' => 'receive',
                'msg' => $message,
            ];
            Gateway::sendToClient($client_id, json_encode($data));

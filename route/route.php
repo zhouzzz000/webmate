@@ -30,7 +30,9 @@ Route::post('publish/delete', 'api/Publish/delete')->middleware(['publish']);
 Route::post('publish/star', 'api/Publish/star')->middleware(['token']);
 Route::get('publish/star_list', 'api/Publish/starList')->middleware(['token']);
 
-Route::get('chat/test', 'api/GatewayHandle/bind')->middleware(['token']);
+Route::post('chat/bind', 'api/GatewayHandle/bind')->middleware(['token']);
+//Route::post('chat/send', 'api/GatewayHandle/send')->middleware(['token']);
+Route::post('chat/receive', 'api/GatewayHandle/receive')->middleware(['token']);
 return [
 
 ];
