@@ -65,7 +65,7 @@ class Publish extends Controller
             for ($i = 0; $i < count($images); $i++) {
                 $id = $images[$i];
                 $img = Images::where('id', '=', $id)->find();
-                $itemImgs[] = config('setting.publish_img_prefix') . $img->url . ';';
+                $itemImgs[] = config('setting.publish_img_prefix') . $img->url;
             }
             $item->images = $itemImgs;
             $itemImgs = [];
@@ -127,7 +127,7 @@ class Publish extends Controller
             ]);
         } else if (!$hasPublish) {
             return json([
-                "该用户没有发表任何说说"
+               'msg' => "该用户没有发表任何说说"
             ]);
         } else {
             throw new FailedGetList();
@@ -148,8 +148,6 @@ class Publish extends Controller
             return json([
                 "msg" => 0
             ]);
-
-
         }
     }
 

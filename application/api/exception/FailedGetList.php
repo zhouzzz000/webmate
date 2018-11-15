@@ -10,7 +10,7 @@ namespace app\api\exception;
 
 class FailedGetList extends BaseEcxeption
 {
-    public $msg = '参数验证错误';
+    public $msg = '获取列表失败';
     public $code = 400;
     public $errorCode = 10000;
 }

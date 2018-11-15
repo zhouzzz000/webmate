@@ -52,12 +52,12 @@ class Image
         $imgName = self::createImg($image,$dirPath);
         $imgID = [];
         foreach ($imgName as $i) {
-            $ti = Images::where('url', '=', $i)->where('from', '=', 2)->find();
+            $ti = Images::where('url', '=', date('Y-m-d',time()).'/'.$i)->where('from', '=', 2)->find();
             if ($ti) {
                 $imgID[] = $ti->id;
             } else {
                 $tmp = [
-                    'url' => $i,
+                    'url' => date('Y-m-d',time()).'/'.$i,
                     'from' => 2,
                 ];
                 $tid = new Images();

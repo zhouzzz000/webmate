@@ -28,8 +28,9 @@ Route::get('publish/list', 'api/Publish/publishList')->middleware(['token']);
 Route::get('publish/user_list', 'api/Publish/userList')->middleware(['publish']);
 Route::post('publish/delete', 'api/Publish/delete')->middleware(['publish']);
 Route::post('publish/star', 'api/Publish/star')->middleware(['token']);
-Route::post('publish/star_list', 'api/Publish/starList')->middleware(['token']);
+Route::get('publish/star_list', 'api/Publish/starList')->middleware(['token']);
 
+Route::get('chat/test', 'api/GatewayHandle/bind')->middleware(['token']);
 return [
 
 ];
