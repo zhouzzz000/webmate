@@ -45,6 +45,8 @@ class Events
           'type'=> 'login',
           'client_id' => $client_id,
         ];
+        echo $client_id.'连接上来'."\n";
+        echo '当前在线人数'.Gateway::getAllClientIdCount()."\n";
         Gateway::sendToClient($client_id, json_encode($data));
         // 向所有人发送
 //        Gateway::sendToAll("$client_id login\r\n");
@@ -66,11 +68,13 @@ class Events
        }
        else {
            $message = json_decode($message);
-           $data = [
-               'type' => 'receive',
-               'msg' => $message,
-           ];
-           Gateway::sendToClient($client_id, json_encode($data));
+           if ($message->type != 'pong') {
+               $data = [
+                   'type' => 'receive',
+                   'msg' => $message,
+               ];
+               Gateway::sendToClient($client_id, json_encode($data));
+           }
        }
    }
    
@@ -80,7 +84,13 @@ class Events
     */
    public static function onClose($client_id)
    {
-       // 向所有人发送 
+       // 向所有人发送
+       echo $client_id.'关闭连接'."\n";
+       echo '当前在线人数'.Gateway::getAllClientIdCount()."\n";
+       Gateway::sendToAll(json_encode([
+           'type' => 'userlist',
+           'userList' => Gateway::getAllUidList()
+       ]));
        GateWay::sendToAll("$client_id logout\r\n");
    }
 }

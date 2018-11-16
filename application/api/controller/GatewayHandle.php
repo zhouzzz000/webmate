@@ -23,8 +23,12 @@ class GatewayHandle
         $uid = $request->id;
         $client_id = $request->param('client_id');
         Gateway::bindUid($client_id,$uid);
+        Gateway::sendToAll(json_encode([
+            'type' => 'userlist',
+            'userList' => Gateway::getAllUidList()
+            ]));
         return json([
-            'msg' => 1
+             'msg' => 1
         ]);
     }
 
@@ -32,17 +36,18 @@ class GatewayHandle
     {
         $rid = $request->param('rid');
         $content = $request->param('content');
-        $time = time();
+        $time = date('Y-m-d H:i:s',time());
         $data = [
+          'sid' => $request->id,
           'content' => $content,
           'time' => $time
         ];
-//        MessageHistory::create([
-//           'sid' => $request->id,
-//           'rid' => $rid,
-//            'is_img' => 0,
-//            'content' => $data
-//        ]);
+        MessageHistory::create([
+           'sid' => $request->id,
+           'rid' => $rid,
+            'is_img' => 0,
+            'content' => $content
+        ]);
         return $this->send($rid,json_encode($data));
     }
 
