@@ -21,6 +21,7 @@ class GatewayHandle
     {
         Gateway::$registerAddress = '127.0.0.1:1238';
         $uid = $request->id;
+        $_SESSION['token'] = $request->header('token');
         $client_id = $request->param('client_id');
         Gateway::bindUid($client_id,$uid);
         Gateway::sendToAll(json_encode([

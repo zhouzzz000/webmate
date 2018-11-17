@@ -18,7 +18,7 @@
  * 然后观察一段时间workerman.log看是否有process_timeout异常
  */
 //declare(ticks=1);
-
+require 'Http.php';
 use \GatewayWorker\Lib\Gateway;
 /**
  * 主逻辑
@@ -68,13 +68,24 @@ class Events
        }
        else {
            $message = json_decode($message);
-           if ($message->type != 'pong') {
+           if($message->type == 'token')
+           {
+               $_SESSION[$client_id] = $message->token;
+           }
+           else if ($message->type != 'pong') {
                $data = [
                    'type' => 'receive',
                    'msg' => $message,
                ];
                Gateway::sendToClient($client_id, json_encode($data));
            }
+//           if ($message->type != 'pong') {
+//               $data = [
+//                   'type' => 'receive',
+//                   'msg' => $message,
+//               ];
+//               Gateway::sendToClient($client_id, json_encode($data));
+//           }
        }
    }
    
@@ -91,6 +102,9 @@ class Events
            'type' => 'userlist',
            'userList' => Gateway::getAllUidList()
        ]));
-       GateWay::sendToAll("$client_id logout\r\n");
+       $header = array(
+         "token:".$_SESSION[$client_id],
+       );
+       Http::post('http://localhost/webmate/public/user/logout',$header);
    }
 }
