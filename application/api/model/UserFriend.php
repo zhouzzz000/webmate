@@ -16,6 +16,6 @@ class UserFriend extends BaseModel
     protected $hidden = ['delete_time','update_time','create_time'];
     public function friendInfo()
     {
-        return $this->belongsTo('User','fid','id');
+        return $this->belongsTo('User','fid','id')->with('avator');
     }
 }

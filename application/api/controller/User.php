@@ -13,6 +13,7 @@ use app\api\exception\ParamException;
 use app\api\exception\PasswordInvalidException;
 use app\api\model\Images;
 use app\api\model\LoginHistory;
+use app\api\model\MessageHistory;
 use app\api\service\Token;
 use think\Controller;
 use think\facade\Cache;
