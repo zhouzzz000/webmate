@@ -17,6 +17,11 @@ Route::post('user/logout', 'api/User/logout')->middleware(['token']);
 Route::post('user/login', 'api/User/login')->middleware(['login']);
 
 
+Route::get('message/unread', 'api/Message/getUnreadMessageNum')->middleware(['token']);
+Route::get('message/history', 'api/Message/getMessageHistory')->middleware(['token']);
+
+
+
 Route::post('friend/add', 'api/Friend/add')->middleware(['token','friend']);
 Route::post('friend/delete', 'api/Friend/delete')->middleware(['token','friend']);
 Route::get('friend/list', 'api/Friend/friendList')->middleware(['token']);

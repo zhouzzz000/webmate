@@ -38,17 +38,23 @@ class GatewayHandle
         $rid = $request->param('rid');
         $content = $request->param('content');
         $time = date('Y-m-d H:i:s',time());
+
+        $temMsg = MessageHistory::create([
+            'sid' => $request->id,
+            'rid' => $rid,
+            'is_img' => 0,
+            'content' => $content,
+            'read' => 1,
+        ]);
+        echo $temMsg->id;
+
         $data = [
           'sid' => $request->id,
           'content' => $content,
-          'time' => $time
+          'time' => $time,
+            'id' => $temMsg->id,
         ];
-        MessageHistory::create([
-           'sid' => $request->id,
-           'rid' => $rid,
-            'is_img' => 0,
-            'content' => $content
-        ]);
+
         return $this->send($rid,json_encode($data));
     }
 
@@ -61,6 +67,10 @@ class GatewayHandle
                 'msg' => 1,
             ]);
         }else{
+            $msg = json_decode($msg);
+            $msg_history = MessageHistory::where('id','=',$msg->id)->find();
+            $msg_history->read = 0;
+            $msg_history->save();
             return json([
                'msg' => 0,
                'res' => '对方不在线'
