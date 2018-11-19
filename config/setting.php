@@ -15,6 +15,6 @@
 
 return [
     'salt' => '12345678910AXCVBNMLKJHGFDSAQWERTYUIOPazxcvbnmlkjhgfdsqweertyuiop',
-    'img_prefix' => 'http://zzwzs.xyz/images/',
+    'img_prefix' => 'http://120.79.202.156/images/',
     'publish_img_prefix' => 'http://zzwzs.xyz/webmate/public/image'
 ];
