@@ -151,5 +151,9 @@ class User extends Controller
         ]);
     }
 
-
+    public function getUserDefaultAvator(Request $request)
+    {
+        $data = Images::where('from','=',0)->select();
+        return json($data);
+    }
 }
