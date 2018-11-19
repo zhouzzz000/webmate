@@ -153,7 +153,7 @@ class User extends Controller
 
     public function getUserDefaultAvator(Request $request)
     {
-        $data = Images::where('from','=',0)->select();
+        $data = Images::where('from','=',0)->visible(['id','url'])->select();
         return json($data);
     }
 }
