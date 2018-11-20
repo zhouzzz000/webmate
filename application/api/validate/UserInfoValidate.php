@@ -13,8 +13,8 @@ class UserInfoValidate extends BaseValidate
 {
     protected $rule = [
         'nick' => ['min'=> 3,'max' => 25,'regex' => '/^[\w]+/'],
-        'sex' => ['in'=>'1,2'],
-        'age' => ['integer','between'=>'10,70'],
+        'sex' => ['in'=>'0,1,2'],
+        'age' => ['integer','between'=>'0,70'],
         'major' => ['chsAlpha'],
         'grade' => ['integer','between'=>'1,99'],
         'email' => ['email'],
