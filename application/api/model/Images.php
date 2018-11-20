@@ -13,7 +13,7 @@ use think\Model;
 
 class Images extends BaseModel
 {
-    protected $visible = ['url'];
+    protected $visible = ['id','url'];
 
     public static function getUrlByID($id)
     {
