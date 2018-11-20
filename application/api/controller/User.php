@@ -62,13 +62,14 @@ class User extends Controller
 
     public function updateUserInfo(Request $request)
     {
-        $param = $request->request();
+        $param = $request->param();
         $id = $request->id;
         $user = UserModel::get($id);
         foreach ($param as $key => $value)
         {
             $user ->$key= $value;
         }
+//        var_dump($param);
         return json([
             'msg' => $user->save(),
         ]);

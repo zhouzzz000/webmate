@@ -19,7 +19,7 @@ class User
 {
     public function handle($request, \Closure $next)
     {
-        if ($request->has('email') || $request->has('sex')|| $request->has('birth')|| $request->has('signature')|| $request->has('avator')) {
+        if ($request->has('email') || $request->has('sex')|| $request->has('birth')|| $request->has('signature')|| $request->has('avator') || $request->has('nick')) {
             (new UserInfoValidate())->goCheck();
         }else{
             (new UserUpdatePasswordValidate())->goCheck();
