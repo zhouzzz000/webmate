@@ -35,6 +35,11 @@ class Friend extends Controller
             'fid' => $fid
         ];
         $isOK = (new UserFriend())->save($arr);
+        $arr = [
+            'sid' => $uid,
+            'uid' => $fid
+        ];
+        $isOK = (new UserFriend())->save($arr);
         return json([
             'msg' => $isOK
         ]);

@@ -46,13 +46,13 @@ class GatewayHandle
             'content' => $content,
             'read' => 1,
         ]);
-        echo $temMsg->id;
-
         $data = [
           'sid' => $request->id,
           'content' => $content,
           'time' => $time,
-            'id' => $temMsg->id,
+           'id' => $temMsg->id,
+          'type' => 'send',
+            'rid' => $rid,
         ];
 
         return $this->send($rid,json_encode($data));
