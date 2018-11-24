@@ -59,7 +59,7 @@ class Friend extends Controller
 
     public function friendList(Request $request)
     {
-        $data = UserFriend::with(['friendInfo'])->where('uid','=',$request->id)->select();
+        $data = UserFriend::with(['friendInfo'])->where('uid','=',$request->id)->order('create_time desc')->select();
         return json(
           $data);
     }
