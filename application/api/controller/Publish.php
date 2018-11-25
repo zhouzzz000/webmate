@@ -67,6 +67,9 @@ class Publish extends Controller
                 $img = Images::where('id', '=', $id)->find();
                 $itemImgs[] = config('setting.publish_img_prefix') . $img->url;
             }
+            $tmp = \app\api\model\User::get($item->uid);
+            $tmpImg = Images::getUrlByID($tmp->avator);
+            $item->avator_url = $tmpImg;
             $item->images = $itemImgs;
             $itemImgs = [];
         }
