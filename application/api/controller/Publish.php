@@ -69,6 +69,7 @@ class Publish extends Controller
             }
             $tmp = \app\api\model\User::get($item->uid);
             $tmpImg = Images::getUrlByID($tmp->avator);
+            $item->nick = $tmp->nick;
             $item->avator_url = $tmpImg;
             $item->images = $itemImgs;
             $itemImgs = [];
