@@ -57,7 +57,7 @@ class Image
                 $imgID[] = $ti->id;
             } else {
                 $tmp = [
-                    'url' => date('Y-m-d',time()).'/'.$i,
+                    'url' => '/'.date('Y-m-d',time()).'/'.$i,
                     'from' => 2,
                 ];
                 $tid = new Images();
