@@ -57,7 +57,8 @@ class Friend extends Controller
         if (!$rel){
             throw new FriendHasException('你和TA还不是朋友');
         }
-        $rel =  UserFriend::where('uid','=',$fid)->where('fid','=',$uid);
+        $res =  UserFriend::where('uid','=',$fid)->where('fid','=',$uid);
+        $res->delete();
         return json([
             'msg' => $rel->delete()
         ]);
