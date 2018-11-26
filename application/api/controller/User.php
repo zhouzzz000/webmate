@@ -60,6 +60,15 @@ class User extends Controller
         return json($data);
     }
 
+    public function getUserInfoById(Request $request)
+    {
+        $id = $request->param('uid');
+        $data = UserModel::with(['avator'])->get($id)->hidden(['password','create_time','update_time','delete_time']);
+//        $avator = $data->avator;
+//        $data->avator = Images::getUrlByID($avator);
+        return json($data);
+    }
+
     public function updateUserInfo(Request $request)
     {
         $param = $request->param();
