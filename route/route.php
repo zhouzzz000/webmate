@@ -40,6 +40,8 @@ Route::get('publish/star_list', 'api/Publish/starList')->middleware(['token']);
 Route::post('chat/bind', 'api/GatewayHandle/bind')->middleware(['token']);
 //Route::post('chat/send', 'api/GatewayHandle/send')->middleware(['token']);
 Route::post('chat/receive', 'api/GatewayHandle/receive')->middleware(['token']);
+
+Route::get('chat/mate', 'api/GatewayHandle/mate')->middleware(['token']);
 return [
 
 ];

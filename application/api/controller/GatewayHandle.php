@@ -77,4 +77,24 @@ class GatewayHandle
             ]);
         }
     }
+
+    public function mate(Request $request)
+    {
+        $max = $request->param('max_age');
+        $min = $request->param('min_age');
+        $sex = $request->param('sex');
+        $user = \app\api\model\User::where('age','<=','max_age')->where('age','>=','min_age')
+                                    ->where('sex','=',$sex)->select();
+        if (!$user)
+        {
+            return json([
+                'msg' => '-1',
+                'uid' => -1,
+            ]);
+        }
+        return json([
+            'msg' => '0',
+            'uid' => $user,
+        ]);
+    }
 }
