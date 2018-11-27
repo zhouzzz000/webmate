@@ -83,7 +83,7 @@ class GatewayHandle
         $max = $request->param('max_age');
         $min = $request->param('min_age');
         $sex = $request->param('sex');
-        $user = \app\api\model\User::where('age','<=','max_age')->where('age','>=','min_age')
+        $user = \app\api\model\User::where('age','<=',$max)->where('age','>=',$min)
                                     ->where('sex','=',$sex)->select();
         if (!$user)
         {
