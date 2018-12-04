@@ -9,8 +9,10 @@
 namespace app\api\controller;
 
 
+use app\api\model\Images;
 use app\api\model\MessageHistory;
 use app\push\Events;
+use GatewayWorker\Lib\Db;
 use \GatewayWorker\Lib\Gateway;
 use think\Request;
 
@@ -83,9 +85,23 @@ class GatewayHandle
         $max = $request->param('max_age');
         $min = $request->param('min_age');
         $sex = $request->param('sex');
-        $user = \app\api\model\User::with(['avator'])->where('age','<=',$max)->where('age','>=',$min)
-                                    ->where('sex','=',$sex)->select();
-        if (!$user)
+        $query = "select * FROM `user`
+                    WHERE age <= ? and age >= ? and sex = ? AND id != ? and id not IN (
+                    SELECT fid FROM user_friend
+                    WHERE uid = ?
+                    )";
+        $res = \think\Db::query($query,[$max,$min,$sex,$request->id,$request->id]);
+        foreach ($res as &$item)
+        {
+            $img = Images::getUrlByID($item['avator']);
+            $item['avator'] = [
+                'url'=> $img
+            ];
+        }
+//        $user = \app\api\model\User::with(['avator'])->where('age','<=',$max)->where('age','>=',$min)
+//                                    ->where('sex','=',$sex)->select();
+
+        if (!$res)
         {
             return json([
                 'msg' => '-1',
@@ -94,7 +110,7 @@ class GatewayHandle
         }
         return json([
             'msg' => '0',
-            'uid' => $user,
+            'uid' => $res,
         ]);
     }
 }

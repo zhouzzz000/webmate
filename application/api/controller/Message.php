@@ -25,10 +25,10 @@ class Message
                   from message_history 
                   WHERE rid =? AND sid = ? OR sid = ? AND rid = ?";
         $history = Db::query($query,[$id,$fid,$id,$fid]);
-        $query = "UPDATE message_history
-                  set `read` = 1
-                  WHERE rid = ? AND sid = ?";
-        $res = Db::query($query,[$id,$fid]);
+//        $query = "UPDATE message_history
+//                  set `read` = 1
+//                  WHERE rid = ? AND sid = ?";
+//        $res = Db::query($query,[$id,$fid]);
         if($history){
             return json($history);
         }
