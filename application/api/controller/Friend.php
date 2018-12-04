@@ -36,7 +36,7 @@ class Friend extends Controller
         ];
         $isOK = (new UserFriend())->save($arr);
         $arr = [
-            'sid' => $uid,
+            'fid' => $uid,
             'uid' => $fid
         ];
         $isOK = (new UserFriend())->save($arr);
